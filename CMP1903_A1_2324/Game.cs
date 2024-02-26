@@ -15,8 +15,10 @@ namespace CMP1903_A1_2324
          * rolls could be continous, and the totals and other statistics could be summarised for example.
          */
 
+        public int SumOfDieValues { get; private set; }
+
         //Methods
-        public static void StartGame()
+        public void StartGame()
         {
 
             // Create a single instance of Random to share among all dice
