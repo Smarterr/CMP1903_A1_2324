@@ -15,12 +15,13 @@ namespace CMP1903_A1_2324
              * Create a Testing object to verify the output and operation of the other classes.
              */
 
+            Testing.TestGame();
+            Testing.TestDie();
+
             // Creats a game object and calls its methods
             Game game = new Game();
             game.StartGame();
 
-            Testing.TestGame();
-            Testing.TestDie();
         }
     }
 }

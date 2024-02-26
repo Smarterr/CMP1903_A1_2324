@@ -30,7 +30,7 @@ namespace CMP1903_A1_2324
         //Method to roll the die and return result
         public int Roll()
         {
-            DieValue = random.Next(1, 7); // Genrates a random number between 1 and 6
+            DieValue = random.Next(1, 100); // Genrates a random number between 1 and 6
             return DieValue;
         }
     }

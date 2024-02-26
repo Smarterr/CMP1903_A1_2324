@@ -20,7 +20,7 @@ namespace CMP1903_A1_2324
         //Methods
         public void StartGame()
         {
-
+            
             // Create a single instance of Random to share among all dice
             Random random = new Random();
 
@@ -35,14 +35,14 @@ namespace CMP1903_A1_2324
             int result3 = die3.Roll();
 
             // Calculate the sum of the face values
-            int sum = result1 + result2 + result3;
+            SumOfDieValues = result1 + result2 + result3;
 
             // Output the results
             Console.WriteLine("Results of rolling three dice:");
             Console.WriteLine("Die 1: " + result1);
             Console.WriteLine("Die 2: " + result2);
             Console.WriteLine("Die 3: " + result3);
-            Console.WriteLine("Sum of face values: " + sum);
+            Console.WriteLine("Sum of dice values: " + SumOfDieValues);
             Console.ReadLine();
         }
     }
