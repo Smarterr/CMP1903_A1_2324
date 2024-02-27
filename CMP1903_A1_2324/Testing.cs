@@ -31,7 +31,7 @@ namespace CMP1903_A1_2324
             // Assert that the sum is within the expected range based on the number of dice rolled (3 to 18 for three dice)
             Debug.Assert(sum >= 3 && sum <= 18, $"Sum of die values ({sum}) out of range 3 to 18");
         }
-    
+
         public static void TestDie()
         {
             // Create a Die object
@@ -44,3 +44,5 @@ namespace CMP1903_A1_2324
         }
     }
 }
+
+
