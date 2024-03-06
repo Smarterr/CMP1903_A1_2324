@@ -22,11 +22,11 @@ namespace CMP1903_A1_2324
         public static void TestGame()
         {
             // Create a Game object
-            Game game = new Game();
+            Game gamecheck = new Game();
 
-            game.StartGame();
+            gamecheck.StartGame();
 
-            int sum = game.SumOfDieValues;
+            int sum = gamecheck.SumOfDieValues;
 
             // Assert that the sum is within the expected range based on the number of dice rolled (3 to 18 for three dice)
             Debug.Assert(sum >= 3 && sum <= 18, $"Sum of die values ({sum}) out of range 3 to 18");
@@ -35,10 +35,10 @@ namespace CMP1903_A1_2324
         public static void TestDie()
         {
             // Create a Die object
-            Die die = new Die(new Random());
+            Die diecheck = new Die(new Random());
 
             // Tests that the die roll is inbetween 1 and 6
-            int rollResult = die.Roll();
+            int rollResult = diecheck.Roll();
             Debug.Assert(rollResult >= 1 && rollResult <= 6, $"Die roll result ({rollResult}) out of range.");
 
         }
